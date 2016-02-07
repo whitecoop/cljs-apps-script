@@ -1,7 +1,5 @@
 (ns cljs-apps-script.core)
 
-(enable-console-print!)
+(.log js/Logger "eggs!")
 
-(println "Hello world!")
-
-(.log js/console "eggs!")
+(.log js/Logger (str "Should be 2... "(+ 1 1)))
